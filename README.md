@@ -69,6 +69,7 @@ Flywheel을 통해 윈드터빈의 블레이드를 모사했습니다. 블레이
 
 #### 2. Data Type
 
+![image](https://user-images.githubusercontent.com/84221531/209155443-00c24ebb-ac87-4ce6-bdb8-752478637d92.png)
 
 
 베어링 고장진단을 위해 CWRU dataset을 사용했을 때 99%이상의 성능을 보였던 최신기법 1D- CNN, 2D-CNN, CNN-LSTM 3가지를 선정했습니다. 
