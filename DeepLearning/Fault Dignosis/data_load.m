@@ -2,11 +2,6 @@ function [dataset_re,b] = data_load(path)
 %   input: data path
 %   output: data
 
-
-
-% addpath("data")
-% addpath("pre_data")
-% addpath(path)
 addpath("data/pre_data/"+path)
 
 a = load('data.mat');
