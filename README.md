@@ -51,10 +51,6 @@ Flywheel을 통해 윈드터빈의 블레이드를 모사했습니다. 블레이
 
 
 
-데이터는 12kHz, 10sec으로 취득했고 현재 업로드한 데이터는 4000개씩 Split한 데이터를 따로 저장했습니다.
-
-
-
 # Bearing Fault Diagnosis
 
 #### 1. Data Spec
@@ -69,14 +65,27 @@ Flywheel을 통해 윈드터빈의 블레이드를 모사했습니다. 블레이
 
 #### 2. Data Type
 
+데이터의 분류는 아래의 테이블과 같이 3가지 Case로 구분하여 취득했습니다.
+
+또한 이후 사용되어질 Deep Learning 모델의 입력과 맞추기 위하여
+
+1차원 : 1x4000   /    2 차원: 64x64 로 전처리 했습니다.
+
+
+
 ![image](https://user-images.githubusercontent.com/84221531/209155443-00c24ebb-ac87-4ce6-bdb8-752478637d92.png)
 
 
+
+#### 3. DeepLearning Model
+
 베어링 고장진단을 위해 CWRU dataset을 사용했을 때 99%이상의 성능을 보였던 최신기법 1D- CNN, 2D-CNN, CNN-LSTM 3가지를 선정했습니다. 
 
-1D-CNN과 CNN-LSTM의 입력은 1차원이므로 진동데이터를 일정 주기로 Split하여 전처리 하였고
 
-2D-CNN은 진동데이터를 통해 64X64의 이미지 데이터를 만드는 전처리를 진행하였다.
+
+
+
+
 
 
 
