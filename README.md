@@ -81,25 +81,48 @@ Testbench는 아래의 사진과  같이 3가지 유형의 실험(베어링 고�
 
 #### 3. Deep-Learning Model
 
-베어링 고장진단을 위해 CWRU dataset을 사용했을 때 99%이상의 성능을 보였던 최신기법 1D- CNN, 2D-CNN, CNN-LSTM 3가지를 선정했습니다. 
+- 베어링 고장진단을 위해 CWRU dataset을 사용했을 때 99%이상의 성능을 보였던 최신기법 1D- CNN, 2D-CNN, CNN-LSTM 3가지를 선정했습니다. 
 
 ![image](https://user-images.githubusercontent.com/84221531/209174875-e43218e6-635f-4f3a-9e6e-6b0855751428.png)
 
+####   Reference
+
+​	**[1]** **Chen et al, An improved fault diagnosis using 1D-convolutional neural network model, 2020**
+
+​    **[2] Wen et al, A new convolutional neural network-based data-driven fault diagnosis method, 2017**
+
+​	**[3]** **Chen et al, Bearing fault diagnosis base on multi-scale CNN and LSTM model, 2021**
 
 
 
+#### 4. Result
 
+- 1D - CNN
 
+|               | **CASE  1** | **CASE  2** | **CASE  3** |
+| ------------- | ----------- | ----------- | ----------- |
+| Accuracy (%)  | 100         | 80.33       | 71.00       |
+| Precision (%) | 100         | 81.40       | 71.39       |
+| Recall (%)    | 100         | 80.33       | 71.06       |
+| F1_score (%)  | 100         | 80.51       | 70.39       |
 
+- 2D - CNN
 
+|               | **CASE  1** | **CASE  2** | **CASE  3** |
+| ------------- | ----------- | ----------- | ----------- |
+| Accuracy (%)  | **100**     | **100**     | **97.64**   |
+| Precision (%) | **100**     | **100**     | **97.64**   |
+| Recall (%)    | **100**     | **100**     | **97.64**   |
+| F1_score (%)  | **100**     | **100**     | **97.63**   |
 
+- CNN - LSTM
 
-
-
-
-
-
-
+|               | **CASE  1** | **CASE  2** | **CASE  3** |
+| ------------- | ----------- | ----------- | ----------- |
+| Accuracy (%)  | 99.00       | 84.67       | 63.00       |
+| Precision (%) | 99.09       | 85.45       | 67.05       |
+| Recall (%)    | 99.00       | 84.67       | 63.14       |
+| F1_score (%)  | 99.00       | 84.90       | 61.23       |
 
 
 
