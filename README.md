@@ -1,4 +1,4 @@
-# **Small-Scaled Wind Turbine Testbench for Bearing Fault Diagnosis** 
+# **Design of a Small-Scaled Wind Turbine Testbed for Bearing Fault Diagnosis** 
 
 ***School of Mechanical and Control Engineering***
 
